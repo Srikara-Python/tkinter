@@ -1,0 +1,76 @@
+IMPORTS :-
+
+1) Every tkinter import is like " from tkinter import * ".
+
+__________________________________________________________________________________________________
+
+Initializing the root window :- 
+
+1) The root window must be made as " root = Tk() ".
+
+__________________________________________________________________________________________________
+
+Creating a loop :-
+We have to create a loop such that the program doesn't stop running ;
+    root.mainloop()
+
+__________________________________________________________________________________________________
+
+Basic structure of tkinter program :-
+all the above steps leads to a simple structure:
+    from tkinter import *
+    root = Tk()
+
+    root.mainloop()
+
+__________________________________________________________________________________________________
+
+Widgets :- 
+
+Everything on the root window in tkinter is a widget.
+There are different kinds of widgets such as labels , buttons , text entry etc... 
+
+1) Label :-
+We have to assign a variable for our label namely label1 and label2 in our example;
+    mylabel1 = Label(root, text="")
+    mylabel2 = Label(root, text="")
+
+2) Button :-
+We have to assign a variable for our Button namely myButton  in our example;
+    myButton = Button(root, text="") # 
+
+We can make it disabled by "state" function ;-
+    state = DISABLED
+
+We can execute functions by for example :-
+    def myClick():
+        myLabel = Label(root, text="")
+        myLabel.pack()
+
+    myButton = Button(root, text=""command=myClick) 
+    myButton.pack()
+
+4) 
+
+5) Functions within a widget ;-
+text="Click Me!"
+padx = 50 
+pady = 50 
+command=myClick,
+fg="blue" 
+bg="red"
+
+4) Put widgets on screen :-
+There are two methods by which we can add the widgets :
+a) .pack() - myWidget.pack()
+
+b) .grid() - myWidget.grid(row=, column=)
+
+
+
+
+
+
+
+
+
