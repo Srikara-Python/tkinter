@@ -1,3 +1,5 @@
+# My Calculator from tkinter 
+
 from tkinter import *
 
 root = Tk()
@@ -22,7 +24,7 @@ def button_click(number):
    e.insert(0, str(current) + str(number))
 
 def button_clear():
-    e.delete(0, END) 
+    e.delete(0, END)
     check_add = "mylabel_add" in globals()
     check_sub = "mylabel_sub" in globals()
     check_mult = "mylabel_mult" in globals()
@@ -157,7 +159,7 @@ def button_equal():
         whatfunction_sqr()
 
 
-  ## Make our labels 
+  ## Make our labels
 def whatfunction_add():
     if math == "+":
         global mylabel_add
@@ -201,7 +203,7 @@ def whatfunction_sqr():
     if math == "sqr":
         mylabel_sqr = Label(root, text= str(f_num ) + " square")
         mylabel_sqr.grid(row=0, column=4, columnspan=1, padx=40, pady=20)
-  
+
 
 
 # Define buttons
@@ -240,7 +242,7 @@ Button_6.grid(row=2, column=2)
 
 Button_7.grid(row=1, column=0)
 Button_8.grid(row=1, column=1)
-Button_9.grid(row=1, column=2) 
+Button_9.grid(row=1, column=2)
 
 Button_0.grid(row=4, column=0)
 Button_point.grid(row=4, column=1)
