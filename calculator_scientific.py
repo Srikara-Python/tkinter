@@ -4,7 +4,7 @@
 from tkinter import *
 from tkinter import messagebox
 import math
-from sklearn import impute
+
 
 
 root = Tk()
